@@ -19,17 +19,17 @@ public class ModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> TIN_ORE_PLACED = PLACED_FEATURES.register("tin_ore",
             () -> new PlacedFeature(ModConfiguresFeatures.TIN_ORE.getHolder().get(),
                     commonOrePlacement(7,
-                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-20), VerticalAnchor.aboveBottom(60)))));
 
     public static final RegistryObject<PlacedFeature> ALUMINUM_ORE_PLACED = PLACED_FEATURES.register("aluminum_ore",
             () -> new PlacedFeature(ModConfiguresFeatures.ALUMINUM_ORE.getHolder().get(),
                     commonOrePlacement(7,
-                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(50)))));
 
     public static final RegistryObject<PlacedFeature> SILICON_ORE_PLACED = PLACED_FEATURES.register("silicon_ore",
             () -> new PlacedFeature(ModConfiguresFeatures.SILICON_ORE.getHolder().get(),
                     rareOrePlacement(7,
-                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(30), VerticalAnchor.aboveBottom(80)))));
 
 
 
