@@ -1,0 +1,18 @@
+{
+  "item.testmod.lead_ingot": "lead ingot",
+  "item.testmod.desh_ingot": "desh ingot",
+  "item.testmod.tin_ingot": "tin ingot",
+  "item.testmod.aluminum_ingot": "aluminum ingot",
+  "item.testmod.raw_silicon": "raw silicon",
+
+  "block.testmod.tin_block": "tin block",
+  "block.testmod.tin_ore": "tin ore",
+  "block.testmod.aluminum_block": "aluminum block",
+  "block.testmod.aluminum_ore": "aluminum ore",
+  "block.testmod.lead_block": "lead block",
+  "block.testmod.desh_block": "desh block",
+  "block.testmod.silicon_block": "silicon block",
+  "block.testmod.silicon_ore": "silicon ore",
+
+  "itemGroup.testmod": "TestMod Tab"
+}
