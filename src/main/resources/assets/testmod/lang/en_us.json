@@ -14,5 +14,7 @@
   "block.testmod.silicon_block": "silicon block",
   "block.testmod.silicon_ore": "silicon ore",
 
+  "block.testmod.rocket_workbench": "rocket workbench",
+
   "itemGroup.testmod": "TestMod Tab"
 }
