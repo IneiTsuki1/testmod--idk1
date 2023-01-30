@@ -166,7 +166,24 @@ public class RocketWorkbenchEntity extends BlockEntity implements MenuProvider {
         }
 
 
-        boolean hasCompressedSteelInFirstSlot = pEntity.itemHandler.getStackInSlot(1).getItem() == ModItems.COMPRESSED_STEEL.get();
+
+        boolean hasCompressedSteelInFirstSlot = pEntity.itemHandler.getStackInSlot(0).getItem() == ModItems.FIN_ROCKET.get();
+        boolean hasCompressedSteelInSecondSlot = pEntity.itemHandler.getStackInSlot(1).getItem() == ModItems.FIN_ROCKET.get();
+        boolean hasCompressedSteelInFifthSlot = pEntity.itemHandler.getStackInSlot(4).getItem() == ModItems.FIN_ROCKET.get();
+        boolean hasCompressedSteelInSixthSlot = pEntity.itemHandler.getStackInSlot(5).getItem() == ModItems.FIN_ROCKET.get();
+        boolean hasCompressedSteelInSeventhSlot = pEntity.itemHandler.getStackInSlot(6).getItem() == ModItems.FIN_ROCKET.get();
+
+
+        boolean hasCompressedSteelInThirdSlot = pEntity.itemHandler.getStackInSlot(2).getItem() == ModItems.COMPRESSED_STEEL.get();
+        boolean hasCompressedSteelInFourthSlot = pEntity.itemHandler.getStackInSlot(3).getItem() == ModItems.COMPRESSED_STEEL.get();
+        boolean hasCompressedSteelInEightSlot = pEntity.itemHandler.getStackInSlot(7).getItem() == ModItems.COMPRESSED_STEEL.get();
+        boolean hasCompressedSteelInNinthSlot = pEntity.itemHandler.getStackInSlot(8).getItem() == ModItems.COMPRESSED_STEEL.get();
+        boolean hasCompressedSteelInThenthSlot = pEntity.itemHandler.getStackInSlot(9).getItem() == ModItems.COMPRESSED_STEEL.get();
+        boolean hasCompressedSteelInEleventhSlot = pEntity.itemHandler.getStackInSlot(10).getItem() == ModItems.COMPRESSED_STEEL.get();
+        boolean hasCompressedSteelInTwelfthSlot = pEntity.itemHandler.getStackInSlot(11).getItem() == ModItems.COMPRESSED_STEEL.get();
+        boolean hasCompressedSteelInThirteenthSlot = pEntity.itemHandler.getStackInSlot(12).getItem() == ModItems.COMPRESSED_STEEL.get();
+
+        boolean hasCompressedSteelInForteenthSlot = pEntity.itemHandler.getStackInSlot(13).getItem() == ModItems.NOSE_CONE.get();
 
         return hasCompressedSteelInFirstSlot && canInsertAmountIntoOutputSlot(inventory) &&
                 canInsertItemItemOutputSlot(inventory, new ItemStack(ModItems.INGOT_ALUMINUM.get(), 1));

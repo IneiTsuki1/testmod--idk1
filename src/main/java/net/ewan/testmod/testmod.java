@@ -39,10 +39,13 @@ public class testmod
         ModConfiguresFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
 
-        modEventBus.addListener(this::commonSetup);
-        MinecraftForge.EVENT_BUS.register(this);
-
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+
+        modEventBus.addListener(this::commonSetup);
+
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

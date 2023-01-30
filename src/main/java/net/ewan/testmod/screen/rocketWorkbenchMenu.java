@@ -19,7 +19,7 @@ public class rocketWorkbenchMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public rocketWorkbenchMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-        this(id, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
+        this(id, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(17));
     }
 
     public rocketWorkbenchMenu(int id, Inventory inv, BlockEntity entity, ContainerData data) {
