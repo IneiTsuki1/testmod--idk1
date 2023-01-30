@@ -2,9 +2,13 @@ package net.ewan.testmod;
 
 import com.mojang.logging.LogUtils;
 import net.ewan.testmod.block.ModBlock;
+import net.ewan.testmod.block.entity.ModBlockEntities;
 import net.ewan.testmod.item.ModItems;
+import net.ewan.testmod.screen.ModMenuTypes;
+import net.ewan.testmod.screen.rocketWorkbenchScreen;
 import net.ewan.testmod.world.feature.ModConfiguresFeatures;
 import net.ewan.testmod.world.feature.ModPlacedFeatures;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -37,6 +41,8 @@ public class testmod
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -53,7 +59,7 @@ public class testmod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.ROCKET_WORKBENCH_MENU.get(), rocketWorkbenchScreen::new);
         }
     }
 }

@@ -8,6 +8,7 @@
     "testmod:lead_block",
     "testmod:desh_block",
     "testmod:silicon_block",
-    "testmod:silicon_ore"
+    "testmod:silicon_ore",
+    "testmod:rocket_workbench"
   ]
 }

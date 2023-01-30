@@ -27,6 +27,12 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_SILICON = ITEMS.register("raw_silicon",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TESTMOD_TAB)));
 
+    public static final RegistryObject<Item> COMPRESSED_STEEL = ITEMS.register("compressed_steel",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TESTMOD_TAB)));
+
+    public static final RegistryObject<Item> WAFER_ADVANCED = ITEMS.register("wafer_advanced",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TESTMOD_TAB)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

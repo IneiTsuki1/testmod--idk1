@@ -4,6 +4,8 @@
   "item.testmod.tin_ingot": "tin ingot",
   "item.testmod.aluminum_ingot": "aluminum ingot",
   "item.testmod.raw_silicon": "raw silicon",
+  "item.testmod.compressed_steel": "compressed steel",
+  "item.testmod.wafer_advanced": "advanced wafer",
 
   "block.testmod.tin_block": "tin block",
   "block.testmod.tin_ore": "tin ore",

@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -21,6 +22,9 @@ public class ModBlock {
 
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, testmod.MOD_ID);
+
+
+    private static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 16, 16);
 
 
     public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block",
@@ -56,14 +60,9 @@ public class ModBlock {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(2.1f).requiresCorrectToolForDrops()), ModCreativeModeTab.TESTMOD_TAB);
 
-    public static final RegistryObject<Block> ROCKET_WORKBENCH_MODEL_BLOCK = registerBlock("rocket_workbench",
+    public static final RegistryObject<Block> ROCKET_WORKBENCH_BLOCK = registerBlock("rocket_workbench",
             () -> new RocketWorkbenchBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(4f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.TESTMOD_TAB);
-
-
-
-
-
 
 
 
