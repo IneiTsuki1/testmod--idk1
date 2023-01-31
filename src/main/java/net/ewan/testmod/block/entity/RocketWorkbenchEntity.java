@@ -28,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class RocketWorkbenchEntity extends BlockEntity implements MenuProvider {
 
-    private final ItemStackHandler itemHandler = new ItemStackHandler(3) {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(17) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
